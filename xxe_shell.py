@@ -61,3 +61,14 @@ if __name__ == '__main__':
     url = results.url
 
     XXECommandLine(url).cmdloop()
+
+if __name__ == '__main__':
+    banner()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('url')
+
+    results = parser.parse_args()
+    url = results.url
+
+    XXECommandLine(url).cmdloop()
+
